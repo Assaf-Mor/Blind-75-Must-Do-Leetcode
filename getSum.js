@@ -23,7 +23,7 @@ Output: 5
     let carry = a & b; // AND both integers to get the carry 
     while (carry != 0){ 
         let shift = carry << 1; // shift the carry by one to get the shifted carry
-        carry = result & shift; // 
+        //carry = result & shift; // 
         result = result ^ shift;
     }
     return result;
